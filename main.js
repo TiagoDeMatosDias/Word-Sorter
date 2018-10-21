@@ -35,7 +35,7 @@ while(!done){
 
 let writeStream = fs.createWriteStream('Output.txt');
 for(var a = 1; a< unique.length;a++){
-    var write="Number: " + number[a] + " Word: " + unique[a];
+    var write=number[a] + " " + unique[a];
     writeStream.write(write + "\n", 'UTF-8');      
 }
 
